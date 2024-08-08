@@ -29,30 +29,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 @Composable
-private fun MyTabIndicator(
-    indicatorWidth: Dp,
-    indicatorOffset: Dp,
-    indicatorColor: Color,
-) {
-    Box(
-        modifier = Modifier
-            .fillMaxHeight()
-            .width(
-                width = indicatorWidth,
-            )
-            .offset(
-                x = indicatorOffset,
-            )
-            .clip(
-                shape = CircleShape,
-            )
-            .background(
-                color = indicatorColor,
-            ),
-    )
-}
-
-@Composable
 fun TabItem(
     modifier: Modifier = Modifier,
     text: String,

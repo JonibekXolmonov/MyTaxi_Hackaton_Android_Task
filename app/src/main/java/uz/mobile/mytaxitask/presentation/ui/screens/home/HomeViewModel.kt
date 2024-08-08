@@ -1,8 +1,5 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
-
 package uz.mobile.mytaxitask.presentation.ui.screens.home
 
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -14,7 +11,6 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-import uz.mobile.mytaxitask.common.util.isExpanded
 import uz.mobile.mytaxitask.common.util.valid
 import uz.mobile.mytaxitask.domain.use_cases.GetUserLatestLocation
 

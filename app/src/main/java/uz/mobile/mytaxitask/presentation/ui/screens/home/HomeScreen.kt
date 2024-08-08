@@ -140,7 +140,7 @@ fun HomeScreen(
             onTabSelected = { selectedTabIndex ->
                 viewModel.dispatch(HomeIntent.OnTabSelectionChanged(selectedTabIndex = selectedTabIndex))
             },
-            onPressed = {
+            onChevronsUpPressed = {
                 viewModel.dispatch(HomeIntent.ChevronsUp)
             },
             onZoomIn = {
@@ -185,7 +185,7 @@ fun HomeScreenContent(
     uiState: HomeState,
     mapViewportState: MapViewportState,
     onMenuPressed: () -> Unit,
-    onPressed: () -> Unit,
+    onChevronsUpPressed: () -> Unit,
     onTabSelected: (Int) -> Unit,
     onZoomIn: () -> Unit,
     onZoomOut: () -> Unit,
@@ -210,7 +210,7 @@ fun HomeScreenContent(
             uiState = uiState,
             onMenuPressed = onMenuPressed,
             onTabSelected = onTabSelected,
-            onPressed = onPressed,
+            onChevronsUpPressed = onChevronsUpPressed,
             onZoomIn = onZoomIn,
             onZoomOut = onZoomOut,
             onLocateUser = onLocateUser,
@@ -228,7 +228,7 @@ fun HomeScreenOverlayContent(
     modifier: Modifier,
     uiState: HomeState,
     onMenuPressed: () -> Unit,
-    onPressed: () -> Unit,
+    onChevronsUpPressed: () -> Unit,
     onTabSelected: (Int) -> Unit,
     onZoomIn: () -> Unit,
     onZoomOut: () -> Unit,
@@ -290,7 +290,7 @@ fun HomeScreenOverlayContent(
                 .fillMaxSize()
         ) {
 
-            ChevronsUp(modifier = Modifier.layoutId("chevrons_up"), onPressed = onPressed)
+            ChevronsUp(modifier = Modifier.layoutId("chevrons_up"), onPressed = onChevronsUpPressed)
 
             Column(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
