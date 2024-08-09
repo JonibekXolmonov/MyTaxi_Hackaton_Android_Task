@@ -2,20 +2,14 @@ package uz.mobile.mytaxitask.presentation.ui.components
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,8 +19,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import uz.mobile.mytaxitask.presentation.ui.theme.immutableDark
 
 @Composable
 fun TabItem(
@@ -48,6 +42,7 @@ fun TabItem(
             inActiveContainerColor
         },
         animationSpec = tween(easing = LinearEasing),
+        label = "tab_container_color_animation",
     )
 
     Box(
@@ -97,7 +92,7 @@ fun CustomTab(
                     text = text,
                     activeContainerColor = if (selectedItemIndex == 0) MaterialTheme.colorScheme.errorContainer else MaterialTheme.colorScheme.primaryContainer,
                     inActiveContainerColor = MaterialTheme.colorScheme.primary,
-                    activeTextColor = if (selectedItemIndex == 0) MaterialTheme.colorScheme.onErrorContainer else MaterialTheme.colorScheme.onPrimary,
+                    activeTextColor = if (selectedItemIndex == 0) MaterialTheme.colorScheme.onErrorContainer else immutableDark,
                     inActiveTextColor = if (selectedItemIndex == 0) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onPrimary,
                     textStyle = if (index == 0) MaterialTheme.typography.displayMedium else MaterialTheme.typography.bodyMedium
                 )

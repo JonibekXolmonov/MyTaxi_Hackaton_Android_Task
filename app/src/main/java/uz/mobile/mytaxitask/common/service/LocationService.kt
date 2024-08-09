@@ -46,7 +46,7 @@ class LocationService : Service() {
     private fun start() {
         val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANEL_ID)
             .setContentTitle("Tracking location...")
-            .setContentText("Location: null")
+            .setContentText("Location: Loading")
             .setSmallIcon(R.drawable.ic_mytaxi)
             .setOngoing(true)
 

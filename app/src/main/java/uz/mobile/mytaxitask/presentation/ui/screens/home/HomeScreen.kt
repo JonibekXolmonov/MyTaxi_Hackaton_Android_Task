@@ -154,7 +154,7 @@ fun HomeScreen(
                     mapViewportState.easeTo(
                         cameraOptions = cameraOptions {
                             center(Point.fromLngLat(it.longitude, it.latitude))
-                            zoom(12.0)
+                            zoom(16.0)
                         },
                         MapAnimationOptions.mapAnimationOptions { duration(1_000) }
                     )
@@ -294,7 +294,7 @@ fun HomeScreenOverlayContent(
 
             Column(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
-                modifier = Modifier.layoutId("map_action_buttons")
+                modifier = Modifier.layoutId("map_action_buttons").background(Color.Transparent)
             ) {
                 MapActionButton(iconResId = R.drawable.ic_plus, onPressed = onZoomIn)
 
@@ -423,9 +423,6 @@ fun HomeMapView(
     MapboxMap(
         modifier,
         mapViewportState = mapViewportState,
-        mapState = rememberMapState {
-//            gesturesSettings = gesturesSettings.toBuilder().setScrollEnabled(false).build()
-        },
         style = {
             MapStyle(style = if (isSystemInDarkTheme()) Style.DARK else Style.MAPBOX_STREETS)
         },

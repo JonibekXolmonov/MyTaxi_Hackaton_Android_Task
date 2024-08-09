@@ -4,7 +4,7 @@
       chevrons_up : {
         start: ['parent', 'start', 16],
         top: ['parent', 'top', 0],
-        bottom: ['parent', 'bottom', 0],
+        bottom: ['parent', 'bottom', 100],
         visibility: 'visible',
       },
       map_action_buttons: {
@@ -22,7 +22,7 @@
       chevrons_up : {
         start: ['parent', 'start', 40],
         top: ['parent', 'top', 0],
-        bottom: ['parent', 'bottom', 0],
+        bottom: ['parent', 'bottom', 100],
         visibility: 'invisible'
       },
       map_action_buttons: {

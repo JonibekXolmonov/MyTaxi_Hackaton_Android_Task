@@ -61,11 +61,15 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
     implementation(libs.mapbox.android)
     implementation(libs.maps.compose)
+
     implementation(libs.koin.androidx.compose)
+
     implementation(libs.play.services.location)
     implementation(libs.accompanist.permissions)
+
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
