@@ -1,4 +1,4 @@
-<img width="449" alt="Screenshot 2024-04-06 at 3 50 36 PM" src="https://github.com/JonibekXolmonov/MyTaxi_Hackaton_Android_Task/blob/master/Screenshot%202024-08-09%20at%207.01.14%20PM.png">
+<img width="300" alt="Screenshot 2024-04-06 at 3 50 36 PM" src="https://github.com/JonibekXolmonov/MyTaxi_Hackaton_Android_Task/blob/master/Screenshot%202024-08-09%20at%207.01.14%20PM.png">
 <img width="449" alt="Screenshot 2024-04-06 at 3 50 36 PM" src="https://github.com/JonibekXolmonov/MyTaxi_Hackaton_Android_Task/blob/master/Screenshot%202024-08-09%20at%207.00.37%20PM.png">
 <img width="449" alt="Screenshot 2024-04-06 at 3 50 36 PM" src="https://github.com/JonibekXolmonov/MyTaxi_Hackaton_Android_Task/blob/master/Screenshot%202024-08-09%20at%207.01.22%20PM.png">
 <img width="449" alt="Screenshot 2024-04-06 at 3 50 36 PM" src="https://github.com/JonibekXolmonov/MyTaxi_Hackaton_Android_Task/blob/master/Screenshot%202024-08-09%20at%207.01.53%20PM.png">
